@@ -97,3 +97,42 @@ p {
   margin: 8px 5px;
 
 }
+
+.foto {
+  display: flex;
+  justify-content:center;
+  align-items:last baseline;
+}
+
+.foto img {
+  width: 150px;
+  height: auto;
+  box-shadow: 0px 0px 1.5px black;
+  border-radius: 50%;
+}
+
+/* Efeito de Pulsar */
+.foto:hover img {
+  animation: hearBeat 0.8s infinite;
+  
+}
+
+@keyframes hearBeat {
+
+  0%, 100% {
+      transform: scale(1);
+      filter: brightness(100%)
+    
+  }
+  25%, 75% {
+    transform: scale(1.2);
+    filter: brightness(120%)
+ }
+
+50% {
+  transform: scale(1.1);
+  filter: brightness(110%)
+ 
+}
+
+}
