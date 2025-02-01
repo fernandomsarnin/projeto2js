@@ -1,138 +1,148 @@
-body {
-
-  font-family: 'Montserrat', sans-serif;
-
+/* Reset básico para remover margens e paddings padrão */
+* {
   margin: 0;
-
   padding: 0;
+  box-sizing: border-box;
+}
 
-
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6; /* Melhor espaçamento entre linhas */
+  background-color: #f4f4f9; /* Fundo claro para contraste */
+  color: #333;
 }
 
 header {
-
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-
   color: white;
-
-  padding: 10px 20px;
-
+  padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
 }
 
 nav {
-  /* display: flex;
-
-  justify-content: center;
-
-  gap: 15px; */
-
-  background-color: #d1daf5 ;
-
-  padding: 10px 20px;
-
+  background-color: #d1daf5;
+  padding: 15px 20px;
   text-align: center;
- 
-
 }
 
 nav a {
-
-  
   text-decoration: none;
-
-  color: #333;
-
-  padding: 0 25px;
-
+  color: #040463;
+  padding: 10px 20px;
   font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+  display: inline-block;
+  border-radius: 5px;
 }
 
 nav a:hover {
-
-  text-align: center;
-
   background-color: #0a0a0a;
-
-  border-radius: 5px;
-
   color: #fff;
-
- 
 }
 
 section {
-
-  padding: 20px;
-
+  padding: 30px 20px;
+  margin: 20px 0;
+  background-color: #fff; /* Fundo branco para as seções */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Leve sombra para destaque */
 }
 
 h2 {
-  font-size: 22x;
+  font-size: 24px;
+  text-decoration: underline;
+  color: #040463;
+  margin-bottom: 15px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
+  color: #040463;
+  margin-bottom: 10px;
 }
 
 p {
-  
   font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.8; /* Melhor espaçamento entre parágrafos */
+}
+
+ul {
+  margin: 20px;
+
+}
+
+.paragrafo-nav{
+  color: #fff;
 }
 
 .paragrafoHabilidade {
-  border: solid #b6bdf5;
-  display: block; /* Coloca os parágrafos um abaixo do outro */
-  width: 100%; /* Garante que a largura seja responsiva */
-  max-width: 1200px; /* Define um limite máximo para a largura */
-  padding: 10px;
-  border-radius: 5px;
-  box-sizing: border-box;
+  border: solid 2px #b6bdf5;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 20px auto; /* Centraliza o conteúdo com espaçamento */
+  background-color: #f9f9ff;
+  color: #040463;
   text-align: justify;
-  
-    
 }
 
 .paragrafoHabilidade2 {
-  margin: 8px 5px;
-
+  margin-bottom: 15px;
 }
 
 .foto {
   display: flex;
-  justify-content:center;
-  align-items:last baseline;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
 
 .foto img {
   width: 150px;
-  height: auto;
-  box-shadow: 0px 0px 1.5px black;
+  height: 150px;
   border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para mais profundidade */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Suaviza a transição de efeito */
 }
 
-/* Efeito de Pulsar */
 .foto:hover img {
   animation: hearBeat 0.8s infinite;
-  
 }
 
 @keyframes hearBeat {
-
   0%, 100% {
-      transform: scale(1);
-      filter: brightness(100%)
-    
+    transform: scale(1);
+    filter: brightness(100%);
   }
   25%, 75% {
     transform: scale(1.2);
-    filter: brightness(120%)
- }
-
-50% {
-  transform: scale(1.1);
-  filter: brightness(110%)
- 
+    filter: brightness(120%);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: brightness(110%);
+  }
 }
 
+/* Parágrafo destacado com hover */
+.paragrafo1 {
+  display: block;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f4f4f9;
+  border-radius: 15px;
+  max-width: 90%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: justify;
 }
+
+.paragrafo1:hover {
+  background: linear-gradient(90deg, rgba(12, 7, 98, 0.841) 0%, rgba(9, 9, 121, 0.881) 35%, rgb(63, 119, 131) 100%);
+  cursor: pointer;
+  color: #fff;
+  border-radius: 15px;
+}
+
